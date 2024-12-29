@@ -10,7 +10,7 @@ const Card = () => {
     <div className="card">
       <Title />
       <Count count={count} />
-      <ResetButton />
+      <ResetButton setCount={setCount} />
       <CountButtons setCount={setCount} />
     </div>
   );
