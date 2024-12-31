@@ -7,7 +7,11 @@ const CountButton = ({ setCount, type }) => {
       if (type === "plus") {
         return prev + 1;
       } else {
-        return prev - 1;
+        const newCount = prev - 1;
+        if (newCount < 0) {
+          return 0;
+        }
+        return newCount;
       }
     });
   };
